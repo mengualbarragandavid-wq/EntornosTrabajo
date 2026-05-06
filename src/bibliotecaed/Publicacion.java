@@ -8,7 +8,17 @@ package bibliotecaed;
  *
  * @author usuario
  */
-public class Publicacion {
-    private String TITULO;
-    private int FECHAPUB;
+public abstract class Publicacion {
+    private final String TITULO;
+    private final int FECHAPUB;
+
+    public Publicacion(String TITULO, int FECHAPUB) {
+        this.TITULO = TITULO;
+        this.FECHAPUB = FECHAPUB;
+    }
+    
+    public String datos(){
+        return TITULO+"\nAño de publicación: "+FECHAPUB;
+    }
+    
 }

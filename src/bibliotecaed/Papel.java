@@ -9,7 +9,15 @@ package bibliotecaed;
  * @author usuario
  */
 public class Papel extends Publicacion {
-    private String ISBN;
-    private int PAGINAS;
+    private final String ISBN;
+    private final int PAGINAS;
+
+    public Papel(String TITULO, int FECHAPUB, String ISBN, int PAGINAS) {
+        super(TITULO, FECHAPUB);
+        this.ISBN = ISBN;
+        this.PAGINAS = PAGINAS;
+    }
+    
+    
     
 }

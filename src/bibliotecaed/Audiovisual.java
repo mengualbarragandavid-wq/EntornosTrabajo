@@ -10,7 +10,15 @@ package bibliotecaed;
  */
 public class Audiovisual extends Publicacion {
     
-    private String ISAN;
-    private int DURACION;
+    private final String ISAN;
+    private final int DURACION;
+
+    public Audiovisual(String TITULO, int FECHAPUB, String ISAN, int DURACION) {
+        super(TITULO, FECHAPUB);
+        this.ISAN = ISAN;
+        this.DURACION = DURACION;
+    }
+    
+    
     
 }
