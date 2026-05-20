@@ -27,6 +27,7 @@ public class Libro extends Papel implements Prestable {
        this.prestado = true;
        LocalDate currentDate = LocalDate.now();
        listaPrestamos.add(currentDate+" "+s.getNOMBRE()+" SALIDA BIBLIOTECA");
+       s.getListaPrestamos().add(currentDate+" "+this.getTITULO()+" SALIDA BIBLIOTECA");
     }
 
     @Override
@@ -34,6 +35,7 @@ public class Libro extends Papel implements Prestable {
         this.prestado = false;
         LocalDate currentDate = LocalDate.now();
         listaPrestamos.add(currentDate+" "+s.getNOMBRE()+" RETORNO BIBLIOTECA");
+        s.getListaPrestamos().add(currentDate+" "+this.getTITULO()+" RETORNO BIBLIOTECA");
     }
 
     @Override

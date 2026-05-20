@@ -59,7 +59,8 @@ public class BibliotecaED {
             System.out.println("2) Listar socios");
             System.out.println("3) Consultar préstamos");
             System.out.println("4) Préstamos");
-            System.out.println("5) Salir");
+            System.out.println("5) Devoluciones");
+            System.out.println("6) Salir");
             opcion = sc.nextInt();
             
             switch (opcion) {
@@ -185,6 +186,90 @@ public class BibliotecaED {
                 }
                 
                 case 5 -> {
+                    System.out.println("¿Qué publicación desea devolver?");
+                    System.out.println("1) Murdoku");
+                    System.out.println("2) Las 48 leyes del poder");
+                    System.out.println("3) Interstellar");
+                    System.out.println("4) Los intocables de Elliot Ness");
+                    opcion2 = sc.nextInt();
+                    
+                    switch (opcion2) {
+                        case 1 -> {
+                            System.out.println("¿Quién la devuelve?");
+                            System.out.println("1) Roberto Margallo");
+                            System.out.println("2) Alejandro Costas");
+                            opcion3 = sc.nextInt();
+                            
+                            switch (opcion3) {
+                                case 1 -> {
+                                    l1.devuelve(s1);
+                                }
+                                
+                                case 2 -> {
+                                    l1.devuelve(s2);
+                                }
+                            }
+                            
+                        }
+                        
+                        case 2 -> {
+                            System.out.println("¿Quién la devuelve?");
+                            System.out.println("1) Roberto Margallo");
+                            System.out.println("2) Alejandro Costas");
+                            opcion3 = sc.nextInt();
+                            
+                            switch (opcion3) {
+                                case 1 -> {
+                                    l2.devuelve(s1);
+                                }
+                                
+                                case 2 -> {
+                                    l2.devuelve(s2);
+                                }
+                            }
+                            
+                        }
+                        
+                        case 3 -> {
+                            System.out.println("¿Quién la devuelve?");
+                            System.out.println("1) Roberto Margallo");
+                            System.out.println("2) Alejandro Costas");
+                            opcion3 = sc.nextInt();
+                            
+                            switch (opcion3) {
+                                case 1 -> {
+                                    p1.devuelve(s1);
+                                }
+                                
+                                case 2 -> {
+                                    p1.devuelve(s2);
+                                }
+                            }
+                            
+                        }
+                        
+                        case 4 -> {
+                            System.out.println("¿Quién la devuelve?");
+                            System.out.println("1) Roberto Margallo");
+                            System.out.println("2) Alejandro Costas");
+                            opcion3 = sc.nextInt();
+                            
+                            switch (opcion3) {
+                                case 1 -> {
+                                    p2.devuelve(s1);
+                                }
+                                
+                                case 2 -> {
+                                    p2.devuelve(s2);
+                                }
+                            }
+                            
+                        }
+                       
+                    }
+                }
+                
+                case 6 -> {
                     continuar = false;
                 }                
             }
