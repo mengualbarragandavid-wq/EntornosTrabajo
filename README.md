@@ -16,6 +16,11 @@
 		  <ol>
            <li>Esqueleto de cualquier proyecto de ingeniería de software moderno.  </li>	 
 			<li>Registro histórico inmutable.</li>
+			  <ol>TIPOS DE CONTROL DE VERSIONES.
+			  	<li>Sistemas Locales.</li>
+			  	<li>Sistemas Centralizados.</li>
+			  	<li>Sistemas Distribuidos.</li>
+				  </ol>
 		  </ol>
         <li><strong>Evolución.</strong></li>
 		  <ol>
@@ -37,10 +42,15 @@
 				  </ol>
 		  </ol>
 		<ol>
-			  <ol>TIPOS DE CONTROL DE VERSIONES.
-			  	<li>Sistemas Locales.</li>
-			  	<li>Sistemas Centralizados.</li>
-			  	<li>Sistemas Distribuidos.</li>
+			  <ol>TERMINOLOGÍA.
+			  	<li>Repositorio.</li>
+			  	<li>Rama (Branch).</li>
+			  	<li>Merge.</li>
+				<li>Conflicto.</li>
+			  	<li>Commit.</li>
+			  	<li>HEAD.</li>
+				<li>Tag.</li>
+			  	<li>Sincronización.</li>
 				  </ol>
 		  </ol>
       </ul>
@@ -65,6 +75,23 @@
 					<li>Controlar cambios de código.</li>
 					<li>Mezclar y fusionar cambios.</li>
 					<li>Listado de commits y movernos por ellos.</li>
+				</ol>
+				<ol>ARQUITECTURA INTERNA DE GIT Y ÁREAS DE TRABAJO.
+					<li>Directorio de Trabajo(Working Directory).</li>
+					<li>Área de Preparación (Staging Area o Index).</li>
+					<li>Repositorio Local (Local Repo).</li>
+					<li>Repositorio Remoto (Remote Repo).</li>
+				</ol>
+				<ol>IMPLEMENTACIÓN DE GIT EN EL FLUJO DE DESARROLLO DEL PROYECTO.
+					** Existe una evolución lógica y secuencial.
+					<li>Rama Principal (main/trunk).</li>
+					<li>Rama de Desarrollo (develop).</li>
+					<li>Ramas de Funcionlaidad (feature/xxx).</li>
+				</ol>
+				<ol>OPERACIONES DE SINCRONIZACIÓN: PUSH, PULL Y FETCH.
+					** La sincronización del trabajo local con el repositorio central en la nube es indispensable para el desarrollo colaborativo.
+					<li>Push Origin (git push origin)/rama.</li>
+					<li>Fetch Origin (git fetch origin).</li>
 				</ol>
 		</ul>
     </td>
